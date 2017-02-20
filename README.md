@@ -3,17 +3,25 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: I have completed the extra function, naked_twins, and added it to the main solve loop.
+This function finds all the boxes with two digits, then for each of those boxes, checks each unit that the box belongs to,
+to see if there is another box with the same value. If there is then it loops through all the other boxes in that unit and
+removes the digits.
+All the unit tests pass, but I'm pretty sure this isn't the most effective way to do this. I'm new to python, and still don't fully know the language features. It would be great to see a text book answer.
+
+
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: I have added an extra set of 'units' that include the two main diagonals. These two units are included in the
+unit list and then used as peers in the other functions. This means that the ```eliminate()``` and ```only_choice()``` functions,
+will automatically include them.
 
 ### Install
 
 This project requires **Python 3**.
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
 Please try using the environment we provided in the Anaconda lesson of the Nanodegree.
 
 ##### Optional: Pygame
